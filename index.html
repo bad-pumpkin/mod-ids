@@ -1,22 +1,19 @@
 <!DOCTYPE>
 <head>
-	<title>...</title>
-	<script>
-	let ids = {
-	customtest1:"cheese",
-	customtest2:"lemons",
-}
-
-window.onload = function(){
+<title>...</title>
+	
+<script>
+	window.onload = function(){
 	var hash = window.location.hash
-	navigator.clipboard.writeText(ids[hash.replace("#","")]);
-}
-	</script>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<style>body{line-height:50%;font-family:"Open Sans";}</style>
+	navigator.clipboard.writeText(hash.replace("#",""));
+	}
+</script>
+	
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+<style>body{line-height:50%;font-family:"Open Sans";}</style>
 </head>
 <body>
-	<br style="line-height:0%;">
-	<h1>id copied to clipboard</h1>
-	<h3>you may now close this tab</h3>
+<br style="line-height:0%;">
+<h1>id copied to clipboard</h1>
+<h3>you may now close this tab</h3>
 </body>
